@@ -2,8 +2,6 @@
 
 from post import HNC
 
-X = "X"
-Z = "Z"
 
 h = HNC()
 
