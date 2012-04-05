@@ -21,12 +21,12 @@ def endwhile(self):
 def enddowhile(self):
     self.post.w("O%s while %s" % (self.sub_number, self.clause))
 
-duckpunch = lambda obj, name, func: setattr(obj, name, MethodType(func, obj))
 
 
 class Post (Modal, Register):
     def __init__(self):
-        super(Post, self).__init__()
+        Modal.__init__(self)
+        Register.__init__(self)
         self.blocks = []
         self.w = self.blocks.append
 

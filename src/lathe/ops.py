@@ -27,7 +27,7 @@ class Ops (object):
         p.push_modal_feed_ipr()
         p.push_modal_css(100, 2500)
 
-        iter = p.borrow_register()
+        iter = p.borrow_register(assign="1")
 
         sub = p.owhile("foo")
 
